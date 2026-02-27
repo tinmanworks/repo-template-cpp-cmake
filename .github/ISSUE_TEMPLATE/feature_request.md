@@ -1,9 +1,8 @@
 ---
-name: Feature request
 about: Suggest an improvement or new capability
-title: "[FEATURE] "
 labels: enhancement
-assignees: ""
+name: Feature request
+title: \[FEATURE\]
 ---
 
 ## Problem

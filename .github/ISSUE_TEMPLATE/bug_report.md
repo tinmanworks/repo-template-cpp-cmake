@@ -1,9 +1,8 @@
 ---
-name: Bug report
 about: Report something not working correctly
-title: "[BUG] "
 labels: bug
-assignees: ""
+name: Bug report
+title: \[BUG\]
 ---
 
 ## Description
@@ -12,9 +11,9 @@ Clear description of the problem.
 
 ## Steps To Reproduce
 
-1.
-2.
-3.
+1.  
+2.  
+3.  
 
 ## Expected Behavior
 
@@ -26,9 +25,9 @@ What actually happened.
 
 ## Environment
 
-- OS:
-- Version:
-- Runtime/Compiler (if relevant):
+-   OS:
+-   Version:
+-   Runtime/Compiler (if relevant):
 
 ## Additional Context
 

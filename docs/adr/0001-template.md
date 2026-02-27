@@ -1,6 +1,7 @@
 # ADR 0001: Adopt Base Repository Template
 
 ## Status
+
 Accepted
 
 ## Context
@@ -12,10 +13,10 @@ discoverability, onboarding, and long-term evolution.
 
 Use a shared base repository template that defines:
 
-- Documentation structure
-- Contribution workflow
-- Repository governance
-- Formatting conventions
+-   Documentation structure
+-   Contribution workflow
+-   Repository governance
+-   Formatting conventions
 
 ## Rationale
 
@@ -24,10 +25,12 @@ Standardization reduces cognitive load and prevents structural drift.
 ## Consequences
 
 ### Positive
-- Faster project setup
-- Predictable structure
-- Easier collaboration
+
+-   Faster project setup
+-   Predictable structure
+-   Easier collaboration
 
 ### Negative
-- Some flexibility reduced
-- Template maintenance required
+
+-   Some flexibility reduced
+-   Template maintenance required
