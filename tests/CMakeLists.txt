@@ -1,4 +1,3 @@
-# Placeholder for tests
-# Placeholder test target
-add_executable(test_placeholder ../src/project_name.cpp)
+﻿add_executable(test_placeholder test_placeholder.cpp)
+target_link_libraries(test_placeholder PRIVATE )
 add_test(NAME placeholder COMMAND test_placeholder)
