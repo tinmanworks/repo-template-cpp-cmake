@@ -12,12 +12,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 option(ENABLE_TESTS "Enable tests" ON)
 
-add_executable(${PROJECT_NAME}
-  src/main.cpp
+add_library(${PROJECT_NAME}
+  src/project_name.cpp
 )
 
 target_include_directories(${PROJECT_NAME}
-  PRIVATE
+  PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
