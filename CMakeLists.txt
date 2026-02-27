@@ -13,21 +13,21 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 option(ENABLE_TESTS "Enable tests" ON)
 option(BUILD_APPS "Build example applications" ON)
 
-add_library(
+add_library(${PROJECT_NAME}
   src/project_name.cpp
 )
 
-target_include_directories(
+target_include_directories(${PROJECT_NAME}
   PUBLIC
-    /include
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 if(BUILD_APPS)
-  add_executable(_cli
+  add_executable(${PROJECT_NAME}_cli
     apps/project_name_cli.cpp
   )
-  target_link_libraries(_cli
-    PRIVATE 
+  target_link_libraries(${PROJECT_NAME}_cli
+    PRIVATE ${PROJECT_NAME}
   )
 endif()
 
