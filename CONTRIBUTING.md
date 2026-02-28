@@ -14,13 +14,26 @@
 
 ## Commit Message Format
 
-Use clear prefixes:
+Use Doctrine commit format:
 
-- `feat:` new feature
-- `fix:` bug fix
-- `docs:` documentation changes
-- `chore:` maintenance
-- `refactor:` internal changes without behavior change
+- `<type>(<scope>): <summary>`
+- `(<scope>)` is optional
+
+Allowed `type` values:
+
+- `feat`, `fix`, `docs`, `chore`, `refactor`, `test`, `ci`, `build`, `perf`, `revert`
+
+Rules:
+
+- Use imperative mood (`add`, `fix`, `update`)
+- Keep subject concise (prefer <= 72 chars)
+- Do not end subject with a period
+- For breaking changes, use `!` and include `BREAKING CHANGE:` in the body
+
+Examples:
+
+- `feat(template): add core/advisory validation script`
+- `fix(ci): install ripgrep before validation`
 
 ## Commit Signing
 
