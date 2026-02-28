@@ -53,3 +53,6 @@ clang-format -i apps/project_name_cli.cpp include/project_name.hpp src/project_n
 
 ## Contributing
 See `CONTRIBUTING.md`.
+
+## Advanced Models
+For multi-model C/C++ architectures (library/executable families, engine-app splits, multi-lib workspaces, and addon plugins), use `repo-template-cpp-family`.
