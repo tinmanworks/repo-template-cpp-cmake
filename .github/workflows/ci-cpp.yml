@@ -1,4 +1,4 @@
-﻿name: CI (C++ / CMake)
+name: CI (C++ / CMake)
 
 on:
   push:
@@ -11,6 +11,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Enforce spaces (no tabs)
+        run: |
+          if git grep -nI $'\t' -- '*.c' '*.cc' '*.cpp' '*.cxx' '*.h' '*.hh' '*.hpp' '*.hxx' '*.ipp' '*.tpp'; then
+            echo "Tab characters detected in C/C++ sources. Use 4 spaces."
+            exit 1
+          fi
 
       - name: Configure
         run: cmake -S . -B build -DENABLE_TESTS=ON -DBUILD_APPS=ON -DCMAKE_BUILD_TYPE=Release

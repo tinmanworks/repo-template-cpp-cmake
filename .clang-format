@@ -6,10 +6,11 @@ UseTab: Never
 
 ColumnLimit: 100
 
-BreakBeforeBraces: Attach
+BreakBeforeBraces: Stroustrup
 AllowShortFunctionsOnASingleLine: Empty
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
 
 PointerAlignment: Left
 ReferenceAlignment: Left
@@ -24,4 +25,4 @@ NamespaceIndentation: None
 AlignConsecutiveDeclarations: false
 AlignConsecutiveAssignments: false
 
-ReflowComments: true
+ReflowComments: false

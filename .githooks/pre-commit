@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+patterns=('*.c' '*.cc' '*.cpp' '*.cxx' '*.h' '*.hh' '*.hpp' '*.hxx' '*.ipp' '*.tpp')
+
+if git diff --cached --name-only -- "${patterns[@]}" | grep -q .; then
+    if git diff --cached -- "${patterns[@]}" | grep -n $'\t'; then
+        echo "Tabs detected in staged C/C++ changes. Run clang-format and restage."
+        exit 1
+    fi
+fi

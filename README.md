@@ -28,6 +28,15 @@ ctest --test-dir build --output-on-failure
 ./build/ProjectName_cli
 ```
 
+### Formatting Enforcement
+```bash
+git config core.hooksPath .githooks
+```
+
+```bash
+clang-format -i apps/project_name_cli.cpp include/project_name.hpp src/project_name.cpp tests/test_placeholder.cpp
+```
+
 ## Repository Layout
 - `include/` public headers
 - `src/` library implementation
