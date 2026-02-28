@@ -1,58 +1,46 @@
-# `<Project Name>`{=html}
+# <Project Name>
 
-Short description of the project.
-
-------------------------------------------------------------------------
+Modern C++ template using CMake with a library target, CLI app target, and test target.
 
 ## Status
+- Stage: Draft | Active | Stable | Deprecated
+- Owner: <Owner>
+- License: <License Name>
+- Visibility: Public | Private | Internal
+- Reason: <Why this visibility level is correct>
+- Promotion criteria to Public: <What must be true before public release>
 
--   Stage: Draft \| Active \| Stable \| Deprecated
--   Owner: `<Owner>`{=html}
--   License: `<License Name>`{=html}
-
-------------------------------------------------------------------------
-
-## Purpose
-
-Describe what this project does.
-
-## Scope
-
-Describe what is included and excluded.
-
-------------------------------------------------------------------------
+## What This Project Is
+- A clean starter for C++ projects that need predictable structure and CI.
+- Not a full framework or opinionated application architecture.
 
 ## Quickstart
 
 ### Prerequisites
+- CMake >= 3.20
+- C++20 compiler
 
-List only required dependencies.
-
-### Build / Run
-
-``` bash
-# Example command
+### Build, Test, Run
+```bash
+cmake -S . -B build -DENABLE_TESTS=ON -DBUILD_APPS=ON
+cmake --build build
+ctest --test-dir build --output-on-failure
+./build/ProjectName_cli
 ```
 
-------------------------------------------------------------------------
-
 ## Repository Layout
-
--   `docs/` → project documentation
--   `src/` → source code (if applicable)
--   `tests/` → tests (if applicable)
--   `.github/` → issue templates and CI workflows
-
-------------------------------------------------------------------------
+- `include/` public headers
+- `src/` library implementation
+- `apps/` executable entrypoints
+- `tests/` test targets
+- `docs/` project documentation
+- `examples/` optional sample programs
+- `tools/` helper scripts
 
 ## Documentation
-
--   [Overview](docs/overview.md)
--   [Architecture](docs/architecture.md)
--   [ADRs](docs/adr/)
-
-------------------------------------------------------------------------
+- [Overview](docs/overview.md)
+- [Architecture](docs/architecture.md)
+- [ADRs](docs/adr/)
 
 ## Contributing
-
 See `CONTRIBUTING.md`.
