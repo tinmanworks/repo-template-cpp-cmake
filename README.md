@@ -14,6 +14,13 @@ Modern C++ template using CMake with a library target, CLI app target, and test 
 - A clean starter for C++ projects that need predictable structure and CI.
 - Not a full framework or opinionated application architecture.
 
+## Use This Template
+
+1. Click **Use this template** on GitHub to create a new repository.
+2. Rename package/module identifiers and update ownership metadata.
+3. Review `.env.example` and update environment configuration for your target project.
+4. Run validation and CI checks before first release.
+
 ## Quickstart
 
 ### Prerequisites
